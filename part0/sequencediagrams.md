@@ -5,7 +5,8 @@
 ### 0.4 Opening Landing Page on Traditional Web App
 Chain of events from opening https://fullstack-exampleapp.herokuapp.com/notes 
 
-`browser->server: HTTP GET https://fullstack-exampleapp.herokuapp.com/notes
+```
+browser->server: HTTP GET https://fullstack-exampleapp.herokuapp.com/notes
 server-->browser: HTML-code
 browser->server: HTTP GET https://fullstack-exampleapp.herokuapp.com/main.css
 server-->browser: main.css
@@ -23,13 +24,15 @@ server-->browser: [{ content: "HTML is easy", date: "2019-05-23" }, ...]
 note over browser:
 browser executes the event handler
 that renders notes to display
-end note`
+end note
+```
 
 
 ### 0.5 Creating New Note on Traditional Web App
 User creates new note on traditional web app - https://fullstack-exampleapp.herokuapp.com/notes 
 
-`note over browser: 
+```
+note over browser: 
 Submit button defines action
 and HTTP method attributes
 Form data sent to server
@@ -62,13 +65,15 @@ server-->browser: [{ content: "HTML is easy", date: "2019-05-23" }, ...]
 note over browser:
 browser executes the event handler
 that renders notes to display
-end note`
+end note
+```
 
 ## Single Page App
 
 ### 0.6 Opening Landing Page on Single Page App
 Chain of events from opening https://fullstack-exampleapp.herokuapp.com/spa
-`browser->server: HTTP GET https://fullstack-exampleapp.herokuapp.com/spa
+```
+browser->server: HTTP GET https://fullstack-exampleapp.herokuapp.com/spa
 server-->browser: HTML-code
 browser->server: HTTP GET https://fullstack-exampleapp.herokuapp.com/main.css
 server-->browser: main.css
@@ -87,11 +92,13 @@ note over browser:
 browser executes the event handler
 JSON is parsed into notes array
 Notes are rendered to display 
-end note`
+end note
+```
 
 ### 0.7 Creating New Note on Single Page App
-# User creates note on SPA - https://fullstack-exampleapp.herokuapp.com/spa
+User creates note on SPA - https://fullstack-exampleapp.herokuapp.com/spa
 
+```
 note over browser: 
 Event handler handles form submit event
 Creates new note and pushes note to array
@@ -100,3 +107,4 @@ end note
 
 browser->server: HTTP POST https://fullstack-exampleapp.herokuapp.com/new_note_spa
 server-->browser: Server response with 201 status: {"message":"note created"}
+```
