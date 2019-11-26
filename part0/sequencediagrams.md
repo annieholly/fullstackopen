@@ -41,6 +41,8 @@ browser executes the event handler
 that renders notes to display
 end note
 ```
+![Exercise 0.4 Sequence Diagram - New Note on Traditional Web App](./Part0_0.4_Traditional_NewNote.png)
+
 
 ## Single Page App Sequence Diagrams
 
@@ -68,6 +70,8 @@ JSON is parsed into notes array
 Notes are rendered to display 
 end note
 ```
+![Exercise 0.5 Sequence Diagram - New Note on Traditional Web App](./Part0_0.5_SPA_LandingPage.png)
+
 
 ### 0.6 New note
 User creates note on SPA - https://fullstack-exampleapp.herokuapp.com/spa
@@ -82,3 +86,4 @@ end note
 browser->server: HTTP POST https://fullstack-exampleapp.herokuapp.com/new_note_spa
 server-->browser: Server response with 201 status: {"message":"note created"}
 ```
+![Exercise 0.6 Sequence Diagram - New Note on Single Page App](Part0_0.6_SPA_NewNote.png)
